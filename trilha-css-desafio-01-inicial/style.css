@@ -1,0 +1,217 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* HEADER */
+  header.banner {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .banner-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .banner .logo img {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  header.banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  
+  header.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header.banner button {
+    background-color: #ff5c00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  header.banner button:hover {
+    background-color: #e04a00;
+  }
+  
+  /* MAIN */
+  main {
+    flex-grow: 1;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* Section: course-content */
+  #course-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #182848;
+  }
+  
+  #course-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 700px;
+    color: #555;
+  }
+  
+  .modules-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .module {
+    background-color: #4b6cb7;
+    color: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 8px rgb(75 108 183 / 0.3);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .module:hover {
+    transform: translateY(-5px);
+  }
+  
+  .module span {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Section: transform-world */
+  #transform-world {
+    background-color: #ff5c00;
+    color: white;
+    padding: 30px 20px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(255 92 0 / 0.4);
+  }
+  
+  /* Section: professional-challenges */
+  #professional-challenges {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  #professional-challenges h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #182848;
+  }
+  
+  #professional-challenges img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgb(24 40 72 / 0.15);
+    margin-bottom: 25px;
+  }
+  
+  #professional-challenges p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #182848;
+    color: #bbb;
+    padding: 25px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  footer .dio-logo {
+    width: 140px;
+    filter: brightness(0) invert(1);
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #ff5c00;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  footer a:hover {
+    color: #e04a00;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .modules-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    header.banner h1 {
+      font-size: 2rem;
+    }
+  
+    header.banner p {
+      font-size: 1rem;
+    }
+  
+    header.banner button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    #professional-challenges img {
+      max-width: 100%;
+    }
+  }
+  
