@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yu-Gi-Oh JKP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Yu-Gi-Oh! - Jo-Ken-Pô</h1>
+
+  <div id="game">
+    <div class="choices">
+      <button data-choice="dragao">Dragão Branco</button>
+      <button data-choice="mago">Mago Negro</button>
+      <button data-choice="exodia">Exodia</button>
+    </div>
+
+    <div class="status">
+      <p>Você escolheu: <span id="player-choice">-</span></p>
+      <p>Oponente escolheu: <span id="cpu-choice">-</span></p>
+      <h2 id="result">Resultado: -</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
