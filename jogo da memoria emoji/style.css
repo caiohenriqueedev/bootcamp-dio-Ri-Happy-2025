@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, #a100ff, #ff66cc);
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 80px;
+    height: 80px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .card.revealed {
+    background-color: white;
+    color: black;
+    cursor: default;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
